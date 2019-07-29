@@ -17,13 +17,11 @@ $dob = $_POST['dob'];
 
 
  
- // new file size in KB
- $new_size = $file_size/1024;  
- // new file size in KB
  
- // make file name in lower case
+ $new_size = $file_size/1024;  
+ 
  $new_file_name = strtolower($file);
- // make file name in lower case
+ 
  
  $final_file=str_replace(' ','-',$new_file_name);
  
@@ -34,7 +32,7 @@ $dob = $_POST['dob'];
   ?>
   <script>
   alert('Form submitted successfully');
-        window.location.href='eqt.php?success';
+        window.location.href='test.php?success';
         </script>
   <?php
  }
@@ -43,7 +41,7 @@ $dob = $_POST['dob'];
   ?>
   <script>
   alert('error while uploading file');
-        window.location.href='eqt.php?fail';
+        window.location.href='test.php?fail';
         </script>
   <?php
   
